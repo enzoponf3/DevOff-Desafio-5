@@ -1,5 +1,5 @@
 import React from "react"
-import { Stack, Heading, Flex } from "@chakra-ui/layout"
+import { Stack, Heading } from "@chakra-ui/layout"
 
 const Layout: React.FC = ({ children }) => {
   return (
