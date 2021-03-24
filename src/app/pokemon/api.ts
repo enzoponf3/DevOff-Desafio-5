@@ -1,7 +1,7 @@
 import { Pokemon } from "./types"
 
 const BASE_URL = "https://pokeapi.co/api/v2/pokemon/"
-const ITEMS_PER_PAGE = 10
+const ITEMS_PER_PAGE = 20
 
 export default {
   list: (page = 1): Promise<Pokemon[]> => {

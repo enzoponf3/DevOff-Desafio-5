@@ -1,6 +1,6 @@
 import * as React from "react"
 import { SimpleGrid } from "@chakra-ui/layout"
-import { Skeleton } from "@chakra-ui/react"
+import { Skeleton, Spinner } from "@chakra-ui/react"
 import InfiniteScroll from "react-infinite-scroll-component"
 
 import api from "app/pokemon/api"
@@ -59,7 +59,7 @@ const HomeScreen: React.FC = () => {
   return (
     <InfiniteScroll
       hasMore={true}
-      loader={<h4>Loading . . .</h4>}
+      loader={<Spinner color="green.400" thickness="6px" speed="1.5s" />}
       dataLength={pokemons.length}
       next={loadMore}
     >

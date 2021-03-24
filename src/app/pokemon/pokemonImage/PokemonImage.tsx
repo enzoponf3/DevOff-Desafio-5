@@ -9,14 +9,11 @@ interface Props {
 const PokemonImage: React.FC<Props> = ({ pokemonId, alt }) => {
   return (
     <Img
-      position="absolute"
-      right={-6}
-      top={-2}
-      height={20}
-      width={20}
+      height="100%"
       src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`}
       alt={alt}
       objectFit="cover"
+      loading="lazy"
     ></Img>
   )
 }
